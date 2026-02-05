@@ -64,16 +64,5 @@ Stores all rental bookings.
 
 ### Query 1: Retrieve booking info with customer & vehicle names
 
-```sql
-SELECT
-    b.booking_id,
-    u.name AS customer_name,
-    v.name AS vehicle_name,
-    b.start_date,
-    b.end_date,
-    b.status,
-    b.total_cost
-FROM bookings b
-INNER JOIN users u ON b.user_id = u.user_id
-INNER JOIN vehicles v ON b.vehicle_id = v.vehicle_id;
+
 ERD Link: https://drawsql.app/teams/ripon-chandra/diagrams/sql
